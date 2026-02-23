@@ -4,7 +4,7 @@ import { formatWithCursor, type BuiltInParserName } from 'prettier';
 import babelPlugin from 'prettier/plugins/babel';
 import estreePlugin from 'prettier/plugins/estree';
 
-export type CodeEditorLanguage = 'json' | 'html' | 'javaScript' | 'python';
+export type CodeEditorLanguage = 'json' | 'html' | 'javaScript' | 'python' | 'rust';
 
 export const languageFacet = Facet.define<CodeEditorLanguage, CodeEditorLanguage>({
 	combine: (values) => values[0] ?? 'javaScript',

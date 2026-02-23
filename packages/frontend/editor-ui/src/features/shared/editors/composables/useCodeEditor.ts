@@ -63,6 +63,7 @@ export type CodeEditorLanguageParamsMap = {
 	javaScript: { mode: CodeExecutionMode };
 	python: { mode: CodeExecutionMode };
 	pythonNative: { mode: CodeExecutionMode };
+	rust: {};
 };
 
 export const useCodeEditor = <L extends CodeNodeLanguageOption>({
@@ -154,6 +155,9 @@ export const useCodeEditor = <L extends CodeNodeLanguageOption>({
 				break;
 			case 'html':
 				langExtensions.push(html());
+				break;
+			case 'rust':
+				langExtensions.push(javascript()); // C-like syntax as fallback. Temporary solution. Check later.
 				break;
 		}
 

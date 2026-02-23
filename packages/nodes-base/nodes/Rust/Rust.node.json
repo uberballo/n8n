@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-base.rust",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"details": "Execute Rust code. Input and output are JSON via stdin/stdout. Requires Rust (cargo) installed on the server.",
+	"categories": ["Development", "Core Nodes"],
+	"resources": {
+		"primaryDocumentation": [
+			{
+				"url": "https://www.rust-lang.org/"
+			}
+		]
+	},
+	"alias": ["Rust", "rustc", "cargo"],
+	"subcategories": {
+		"Core Nodes": ["Helpers", "Data Transformation"]
+	}
+}
